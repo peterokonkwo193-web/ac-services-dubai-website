@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <rect width="48" height="48" rx="12" fill="#0A1931"/>
+  <!-- Snowflake / Cooling Icon -->
+  <path d="M24 8v32M12.7 17.5l22.6 13M12.7 30.5l22.6-13" stroke="#00AEEF" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="24" cy="24" r="4.5" fill="#00AEEF"/>
+  <circle cx="24" cy="24" r="2" fill="#FFFFFF"/>
+  <circle cx="37" cy="11" r="3" fill="#FF6B00"/>
+</svg>

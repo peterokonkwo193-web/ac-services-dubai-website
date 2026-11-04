@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #00AEEF;
+  --color-primary-dark: #0087BA;
+  --color-primary-light: #E0F5FD;
+  --color-navy: #0A1931;
+  --color-navy-light: #162947;
+  --color-surface: #F8F9FF;
+  --color-surface-light: #F2F9FC;
+  --color-surface-container: #E5EEFF;
+  --color-surface-container-low: #EFF4FF;
+  --color-surface-container-high: #DCE9FF;
+  --color-surface-container-lowest: #FFFFFF;
+  --color-emergency: #FF6B00;
+  --color-emergency-hover: #E65A00;
+  --color-emergency-light: #FFF0E6;
+  --color-slate-muted: #64748B;
+  --color-border-hairline: #E2E8F0;
+
+  --font-heading: 'Outfit', sans-serif;
+  --font-sans: 'Inter', sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    font-family: var(--font-sans);
+    background-color: #F8F9FF;
+    color: #0A1931;
+    overflow-x: hidden;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  .pt-safe {
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+}
+
+/* Custom subtle animations */
+@keyframes pulseSubtle {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(1.03);
+  }
+}
+
+.animate-pulse-subtle {
+  animation: pulseSubtle 2.5s infinite ease-in-out;
+}
