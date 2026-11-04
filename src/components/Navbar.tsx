@@ -74,28 +74,15 @@ export const Navbar: React.FC = () => {
 
           {/* Header Action Buttons */}
           <div className="flex items-center gap-2.5 sm:gap-3">
-            {/* Direct Call Button (Desktop & Tablet) */}
+            {/* Direct Call Button */}
             <a
               href={BUSINESS_INFO.phoneTel}
-              className="hidden sm:inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-white border border-[#E2E8F0] text-[#0A1931] text-xs sm:text-sm font-semibold hover:border-[#00AEEF] hover:text-[#00AEEF] shadow-xs transition-all active:scale-95"
+              className="inline-flex items-center gap-2 px-3 sm:px-3.5 py-2 rounded-xl bg-white border border-[#E2E8F0] text-[#0A1931] text-xs sm:text-sm font-semibold hover:border-[#00AEEF] hover:text-[#00AEEF] shadow-xs transition-all active:scale-95"
               aria-label={`Call Hotline: ${BUSINESS_INFO.phoneDisplay}`}
             >
               <Phone className="w-4 h-4 text-[#00AEEF]" />
-              <span className="hidden md:inline">{BUSINESS_INFO.phoneDisplay}</span>
-              <span className="md:hidden">Call</span>
-            </a>
-
-            {/* WhatsApp Booking CTA */}
-            <a
-              href={BUSINESS_INFO.whatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-3.5 sm:px-4 py-2 rounded-xl bg-[#00AEEF] text-white text-xs sm:text-sm font-bold shadow-sm hover:bg-[#0096CE] transition-all active:scale-95"
-              aria-label="Chat on WhatsApp"
-            >
-              <MessageCircle className="w-4 h-4 fill-white/20" />
-              <span className="hidden sm:inline">WhatsApp</span>
-              <span className="sm:hidden">Chat</span>
+              <span className="hidden sm:inline">{BUSINESS_INFO.phoneDisplay}</span>
+              <span className="sm:hidden">Call Now</span>
             </a>
 
             {/* Mobile Hamburger Button */}
