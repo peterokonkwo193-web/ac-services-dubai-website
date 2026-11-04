@@ -72,19 +72,8 @@ export const Navbar: React.FC = () => {
             ))}
           </nav>
 
-          {/* Header Action Buttons */}
-          <div className="flex items-center gap-2.5 sm:gap-3">
-            {/* Direct Call Button */}
-            <a
-              href={BUSINESS_INFO.phoneTel}
-              className="inline-flex items-center gap-2 px-3 sm:px-3.5 py-2 rounded-xl bg-white border border-[#E2E8F0] text-[#0A1931] text-xs sm:text-sm font-semibold hover:border-[#00AEEF] hover:text-[#00AEEF] shadow-xs transition-all active:scale-95"
-              aria-label={`Call Hotline: ${BUSINESS_INFO.phoneDisplay}`}
-            >
-              <Phone className="w-4 h-4 text-[#00AEEF]" />
-              <span className="hidden sm:inline">{BUSINESS_INFO.phoneDisplay}</span>
-              <span className="sm:hidden">Call Now</span>
-            </a>
-
+          {/* Mobile Menu Toggle (Header space left clean/empty) */}
+          <div className="flex items-center">
             {/* Mobile Hamburger Button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
