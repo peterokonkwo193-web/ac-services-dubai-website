@@ -50,16 +50,10 @@ export const Navbar: React.FC = () => {
               <Snowflake className="w-6 h-6 stroke-[2.2]" />
             </div>
             <div className="flex flex-col min-w-0">
-              <div className="flex items-center gap-1.5">
-                <span className="font-heading font-bold text-lg sm:text-xl text-[#0A1931] tracking-tight leading-none truncate">
-                  AC Dubai
-                </span>
-                <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded-full bg-[#E5EEFF] text-[#00658D] text-[10px] font-semibold leading-none">
-                  <span className="h-1.5 w-1.5 rounded-full bg-[#00AEEF] animate-pulse"></span>
-                  24/7 Dubai
-                </span>
-              </div>
-              <span className="text-[11px] font-medium text-[#64748B] tracking-wide uppercase truncate">
+              <span className="font-heading font-bold text-lg sm:text-xl text-[#0A1931] tracking-tight leading-none truncate">
+                AC Dubai
+              </span>
+              <span className="text-[11px] font-medium text-[#64748B] tracking-wide uppercase truncate mt-0.5">
                 Maintenance &amp; Repair
               </span>
             </div>
